@@ -5,6 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <meta name="keywords" content="hotel, 5star, hotelo, booking">
+  <meta name="description" content="hotelo - booking service">
+  <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.png">
+  <meta property="og:title" content="Hotelo">
+  <meta property="og:site_name" content="Hotelo">
+  <meta property="og:url" content="https://nolood.github.io/hotelo/">
+  <meta property="og:description" content="hotelo - booking service">
+  <meta property="og:image" content="">
+
+  
+  
   <title>Hotelo</title>
 </head>
 <body>
@@ -39,23 +50,25 @@
           </div>
           <div class="header__upper-searchblock">
             <div class="searchblock__upper">
-              <div class="search__input left">
-                <img class="search__img" src="./img/calendar.png" alt="">
-                <input type="text" value="Jun 10 - 14">
+              <form class="header__form" action="">
+                <div class="search__input left">
+                  <img class="search__img" src="./img/calendar.png" alt="">
+                  <input type="date" id="date" value="Jun 10 - 14">
+                </div>
+                <div class="search__input right">
+                  <img class="search__img" src="./img/person.png" alt="">
+                  <input type="text" value="2 Guests">
+                </div>
               </div>
-              <div class="search__input right">
-                <img class="search__img" src="./img/person.png" alt="">
-                <input type="text" value="2 Guests">
-              </div>
-            </div>
-            <div class="search__input-bottom">
-              <div class="search__input location">
-                <img class="search__img" src="./img/pin.png" alt="">
-                <input type="text" value="United States">
-              </div>
-              <div class="search__btn">
-                <img class="lupa" src="./img/searchLupa.png" alt="">
-              </div>
+              <div class="search__input-bottom">
+                <div class="search__input location">
+                  <img class="search__img" src="./img/pin.png" alt="">
+                  <input type="text" value="United States">
+                </div>
+                <div class="search__btn">
+                  <img class="lupa" src="./img/searchLupa.png" alt="">
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -114,7 +127,7 @@
     </section>
     <section class="section">
       <div class="container hotel">
-        <img class="hotel__img" src="./img/hotelimg.png" alt="">
+        <img class="hotel__img" src="./img/hotelimg.jpg" alt="">
         <div class="hotel__info">
           <h2 class="hotel__title">Finest Luxury Hotels & Resort</h2>
           <p class="hotel__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -151,11 +164,11 @@
     </div>
     <div class="section">
       <div class="container review">
-        <img class="woman__img" src="./img/woman.png" alt="">
+        <img class="woman__img" src="./img/woman.jpg" alt="">
         <div class="review__info">
           <img src="./img/womanAvatar.png" alt="">
           <span class="review__info-title">Nazmul Nabeel</span>
-          <p class="review__info-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ”</p>
+          <blockquote class="review__info-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ”</blockquote>
           <div class="bottom-bar">
             <div class="bottom-bar-short"></div>
             <div class="bottom-bar-long"></div>
@@ -185,7 +198,7 @@
         </div>
         <div class="hotels__cards">
           <div class="hotels__card">
-            <img src="./img/hotel1.png" alt="">
+            <img class="bord-rad" src="./img/hotel1.jpg" alt="">
             <div class="hotels__card-bottom">
               <span class="hotels__card-title">Swimming pool and beach of luxury...</span>
               <p class="hotels__card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -196,7 +209,7 @@
             </div>
           </div>
           <div class="hotels__card">
-            <img src="./img/hotel2.png" alt="">
+            <img class="bord-rad" src="./img/hotel2.jpg" alt="">
             <div class="hotels__card-bottom">
               <span class="hotels__card-title">Swimming pool and beach of luxury...</span>
               <p class="hotels__card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -207,7 +220,7 @@
             </div>
           </div>
           <div class="hotels__card">
-            <img src="./img/hotel3.png" alt="">
+            <img class="bord-rad" src="./img/hotel3.jpg" alt="">
             <div class="hotels__card-bottom">
               <span class="hotels__card-title">Swimming pool and beach of luxury...</span>
               <p class="hotels__card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -231,29 +244,29 @@
           </div>
           <p class="footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <div class="footer__social">
-            <img src="./img/facebook.png" alt="">
-            <img src="./img/instagram.png" alt="">
-            <img src="./img/google.png" alt="">
+            <a href=""><img src="./img/facebook.png" alt=""></a>
+            <a href=""><img src="./img/instagram.png" alt=""></a>
+            <a href=""><img src="./img/google.png" alt=""></a>
           </div>
         </div>
         <ul class="footer__column">
-          <li class="title">Home</li>
-          <li>Booking</li>
-          <li>Facilities</li>
-          <li>Location</li>
-          <li>Contact</li>
+          <li class="title"><a href="">Home</a></li>
+          <li><a href="">Booking </a></li>
+          <li><a href="">Facilities </a></li>
+          <li><a href="">Location</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
         <ul class="footer__column">
-          <li class="title">Help</li>
-          <li>About Us</li>
-          <li>Help center</li>
-          <li>Privacy policy</li>
-          <li>FAQs</li>
+          <li class="title"><a href="">Help</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Help center</a></li>
+          <li><a href="">Privacy policy</a></li>
+          <li><a href="">FAQs</a></li>
         </ul>
         <ul class="footer__column">
-          <li class="title">Get the app</li>
-          <li>iOS app</li>
-          <li>Android app</li>
+          <li class="title"><a href="">Get the app</a></li>
+          <li><a href="">iOS app</a></li>
+          <li><a href="">Android app</a></li>
         </ul>
       </div>
     </div>
